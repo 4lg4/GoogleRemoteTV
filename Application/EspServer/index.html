@@ -107,33 +107,33 @@
 
   </style>
   <script type=text/javascript>
-    function ajaxSend(a, d) {
-      var b = new XMLHttpRequest();
-      var c = window.location.href + a;
-      if (b != null) {
-        b.onreadystatechange = function() {
-          if (b.readyState == 4 && b.status == 200) {
-            if (d != null) {
-              d(b.responseText)
-            }
-          }
-        };
-        b.open("GET", c, true);
-        b.send()
-      } else {
-        logMessage("Error", "Failed to create XMLHttpRequest")
-      }
-      return ""
-    }
+    // function ajaxSend(a, d) {
+    //   var b = new XMLHttpRequest();
+    //   var c = window.location.href + a;
+    //   if (b != null) {
+    //     b.onreadystatechange = function() {
+    //       if (b.readyState == 4 && b.status == 200) {
+    //         if (d != null) {
+    //           d(b.responseText)
+    //         }
+    //       }
+    //     };
+    //     b.open("GET", c, true);
+    //     b.send()
+    //   } else {
+    //     logMessage("Error", "Failed to create XMLHttpRequest")
+    //   }
+    //   return ""
+    // }
 	
-	function logMessage(b, d) {
-      var a = document.getElementById("logMsg");
-      var c = document.querySelectorAll(".msg");
-      if (c.length > 4) {
-        a.removeChild(c[0])
-      }
-      a.insertAdjacentHTML("beforeend", "<p class='" + b + " msg'>" + d + "</p>")
-    }
+	// function logMessage(b, d) {
+    //   var a = document.getElementById("logMsg");
+    //   var c = document.querySelectorAll(".msg");
+    //   if (c.length > 4) {
+    //     a.removeChild(c[0])
+    //   }
+    //   a.insertAdjacentHTML("beforeend", "<p class='" + b + " msg'>" + d + "</p>")
+    // }
 
 
     function postJSON(a, c) {
@@ -154,14 +154,14 @@
       a.insertAdjacentHTML("beforeend", "<p class='" + b + " msg'>" + d + "</p>")
     }
 
-
-    function changeTabPage(b) {
-      var a = document.querySelectorAll(".tabData");
-      for (var c = 0; c < a.length; c++) {
-        a[c].classList.add("hidden");
-      }
-      document.getElementById(b + "Body").classList.remove("hidden");
-    }
+    //
+    // function changeTabPage(b) {
+    //   var a = document.querySelectorAll(".tabData");
+    //   for (var c = 0; c < a.length; c++) {
+    //     a[c].classList.add("hidden");
+    //   }
+    //   document.getElementById(b + "Body").classList.remove("hidden");
+    // }
 
   </script>
 

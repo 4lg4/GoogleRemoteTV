@@ -1,0 +1,17 @@
+{
+  "VOLUME_UP": "1",
+  "VOLUME_DOWN": "2",
+  "CHANNEL_UP": "4",
+  "CHANNEL_DOWN": "5",
+  "POWER": "3",
+  "MUTE": "6",
+  "INPUT": "7",
+  "MENU": "8",
+  "GUIDE": "9",
+  "INFO": "10",
+  "UP": "11",
+  "DOWN": "15",
+  "LEFT": "12",
+  "RIGHT": "14",
+  "OK": "13"
+}
